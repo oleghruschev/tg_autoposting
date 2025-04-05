@@ -17,11 +17,8 @@ from datetime import datetime, timedelta
 # Инициализация логгирования
 logging.basicConfig(level=logging.INFO)
 
-# Установка токена бота
-bot_token = "6309444136:AAFsLUhB5vIwbpfa2Sc3C3WzGZELYDqxunk"
-
-# Установка id канала, куда будут отправляться фото и видео
-channel_id = "-1001251447734"
+bot_token = os.getenv("BOT_TOKEN")
+channel_id = os.getenv("CHANNEL_ID")
 
 # Настройки базы данных
 DATABASE_URL = 'sqlite:///posts.db'  # Файл базы данных в папке с ботом
