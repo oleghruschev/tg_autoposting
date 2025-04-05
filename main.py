@@ -12,6 +12,7 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQu
 from sqlalchemy import create_engine, Column, Integer, String, Text, ForeignKey, DateTime, Boolean
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.ext.declarative import declarative_base
+from aiogram.client.default import DefaultBotProperties
 from datetime import datetime, timedelta
 
 # Инициализация логгирования
