@@ -101,7 +101,7 @@ async def start(message: types.Message):
         else:
             await message.answer("Привет! Черт")
             await asyncio.sleep(2)
-            await message.answer("Отправь что нибудь черт")
+            await message.answer("Отправь что нибудь черт побери")
     except Exception as e:
         logging.exception(f"Ошибка при старте: {e}")
         await message.answer(f"Произошла ошибка: {e}")
